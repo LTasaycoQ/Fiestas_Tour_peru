@@ -230,19 +230,55 @@ body {
 }
 
 
+.detail {
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+}
+.detail_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7em;
+}
 
+.detail__content {
+    background-color: white;
+    padding: 60px;
+    flex-wrap: wrap;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.363);
+    position: relative;
+    top: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
 
+.detailt__content-text{
+    text-align: center;
+}
 
+.detail_title{
+    font-size: 50px;
+    font-weight: 700;
+}
 
-
-
-
+.detail_icon-title{
+    color: orange;
+    font-weight: 700;
+}
 .about {
     padding: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 120px;
 }
 
 .about-content {
@@ -324,10 +360,10 @@ body {
 
 
 .section-experiences-destination {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    gap: 6em;
+    gap: 2em;
 
 }
 
@@ -344,7 +380,7 @@ body {
 
 .experiences-content {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 5em;
@@ -354,7 +390,7 @@ body {
 .experiences {
     display: grid;
     border-radius: 20px;
-    width: 32em;
+    width: 34em;
     margin-top: 50px;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.363);
     transition: transform 0.3s ease;
@@ -635,12 +671,14 @@ body {
 
     }
 
+    .experiences-content {
+        max-width: 700px;
+
+    }
+
     .experiences {
         width: 100%;
     }
-
-
-
 
 
     .section-testimony-card {
@@ -662,6 +700,10 @@ body {
     .content_title_footer {
         width: 100%;
     }
+.detail {
+    height: auto;
+   
+}
 
 }
 
@@ -669,7 +711,7 @@ body {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    gap:15px;
+    gap: 15px;
     justify-content: space-around;
     color: white;
     font-size: 15px;
@@ -697,8 +739,12 @@ body {
         transform: translateY(-100%);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
     }
+
+
+    
 }

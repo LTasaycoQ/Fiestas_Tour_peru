@@ -1,0 +1,704 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1e130e;
+    --secondary-color: #fbc489;
+    --text-color: #444444;
+    --color: #706864;
+    --testimony-text-color: #d3711d;
+    --background-color: #ffd28e;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header_content {
+    width: 100%;
+    height: 70px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin: 10px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.58);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.header-menu {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.logo {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-image: url('assets/Iconos/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.header_reseva {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: var(--testimony-text-color);
+    color: white;
+    font-weight: 900;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.header-nav-menu {
+    width: 600px;
+}
+
+.list-ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+
+.section-fondo {
+    background-image: url('assets/fondos/amazonas2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.section-fondo-overlay {
+    height: 100%;
+    padding: 0 20px;
+}
+
+
+.section-fondo-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    height: 100%;
+    color: white;
+    width: 100%;
+}
+
+
+.section-fondo-content-text {
+    max-width: 600px;
+}
+
+.p-oracion {
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.p-span-oracion {
+    color: white;
+}
+
+
+
+
+.section-fondo-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.section-fondo-paragraph {
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.section-span-title {
+    color: var(--secondary-color);
+}
+
+
+
+
+.section-fondo-buttons {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+.section-fondo-enlace {
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: var(--secondary-color);
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 15px 30px;
+}
+
+
+
+.section-fondo-content-imagenes {
+    display: flex;
+    gap: 20px;
+}
+
+.section-fondo-imagen {
+    border: 4px solid var(--secondary-color);
+    border-radius: 30px;
+    animation: moverVertical 2s ease-out infinite alternate;
+}
+
+
+.section-fondo-imagenes-group1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-fondo-imagen-1 {
+    width: 220px;
+    height: 30em;
+    background-image: url('assets/elementos/edificio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.section-fondo-imagen-2 {
+    width: 180px;
+    height: 50%;
+    background-image: url('assets/elementos/gallitoDelasRocas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-fondo-imagen-3 {
+    width: 180px;
+    height: 50%;
+    background-image: url('assets/elementos/5183506022_e9e7850711_b.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@keyframes moverVertical {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+
+
+
+
+
+
+
+
+.about {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    width: 80em;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.span-about-title {
+    color: orange;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.about__highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.about__item {
+    display: flex;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    gap: 10px;
+    color: var(--text-color);
+}
+
+.bi-check-circle-fill {
+    color: orange;
+}
+
+
+.section-about-imagen {
+    border-radius: 30px;
+}
+
+.section-about-imagen-1 {
+    width: 170px;
+    background-image: url('assets/elementos/peru-country-guide-hero-1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.section-about-imagen-2 {
+    width: 300px;
+    height: 50%;
+    background-image: url('assets/elementos/machupicchupersona.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-about-imagen-3 {
+    width: 300px;
+    height: 50%;
+    background-image: url('assets/elementos/5183506022_e9e7850711_b.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+.section-experiences-destination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+
+}
+
+.section-experiences {
+    text-align: start;
+    padding: 20px;
+    margin-top: 6em;
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiences-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+    width: 100%;
+}
+
+.experiences {
+    display: grid;
+    border-radius: 20px;
+    width: 32em;
+    margin-top: 50px;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.363);
+    transition: transform 0.3s ease;
+}
+
+
+
+.experiences:hover {
+    transform: scale(1.08);
+}
+
+.section-experiences-imagen {
+    height: 15em;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.section-experiences-imagen-1 {
+    background-image: url('assets/fondos/amazonas2.jpg');
+}
+
+.section-experiences-imagen-2 {
+    background-image: url('assets/fondos/puno.jpg');
+}
+
+.section-experiences-imagen-3 {
+    background-image: url('assets/fondos/machu_picchu.jpg');
+}
+
+.section-experiences-imagen-4 {
+    background-image: url('assets/fondos/cusco_aymara.jpg');
+}
+
+
+
+.section-experiences-destination-title {
+
+    margin-left: 20px;
+    margin-top: 18px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.span-detail-experience,
+.section-experiences-destination-paragraph {
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.experiences-button-detalles {
+    margin-left: 20px;
+    margin-right: 20PX;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: var(--secondary-color);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.section-content-title {
+    text-align: center;
+}
+
+
+
+.section-testimony-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    margin-bottom: 50px;
+    margin-top: 3em;
+}
+
+.card-testimony {
+    width: 20em;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.189);
+    background-color: rgb(235, 235, 235);
+}
+
+
+.quote {
+    font-size: 50px;
+}
+
+.content-car-testimony {
+    font-size: 15px;
+    color: var(--testimony-text-color);
+}
+
+.card-conten-coment {
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+.content-user {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.text-content-coment {
+    height: 80px;
+    overflow-y: scroll;
+}
+
+
+.footer {
+    width: 100%;
+    height: 350px;
+    background-color: var(--primary-color);
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.fotter_elemento {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.fotter_text {
+    color: var(--color);
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.fotter_title {
+    color: white;
+    font-size: 16px;
+}
+
+.content_title_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--color);
+    width: 320px;
+}
+
+.footer_container_title {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.footer_logo {
+    width: 80px;
+    height: 80px;
+}
+
+.fotter_title--featured {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.footer_span_text {
+    color: var(--secondary-color);
+}
+
+.fotter_lista {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.fotter_lista_element {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icono {
+    color: var(--secondary-color);
+    background-color: var(--color);
+    padding: 5px;
+    border-radius: 100px;
+    font-size: 14px;
+}
+
+
+.responsive__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bi-list {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* responsive design */
+@media (max-width: 1024px) {
+    .bi-list {
+        display: block;
+    }
+
+
+    .header-nav-menu {
+        display: none
+    }
+
+
+    .section-fondo-content-text {
+        text-align: center;
+
+    }
+
+    .section-fondo-buttons {
+        justify-content: space-around;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+    }
+
+    .section-fondo-content-imagenes {
+        display: none;
+    }
+
+
+    .about__highlights {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+
+
+    .section-experiences-destination {
+        flex-direction: column;
+        align-items: center;
+        gap: 6em;
+
+    }
+
+    .experiences {
+        width: 100%;
+    }
+
+
+
+
+
+    .section-testimony-card {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .card-testimony {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .content_title_footer {
+        width: 100%;
+    }
+
+}
+
+.list-ul-responsive {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap:15px;
+    justify-content: space-around;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.menu_responsive {
+    padding: 20px 0px;
+    margin-top: 90px;
+    background-color: rgba(0, 0, 0, 0.697);
+    position: fixed;
+    border-radius: 20px;
+    width: 98%;
+    height: auto;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    animation: slideDown 0.5s ease forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

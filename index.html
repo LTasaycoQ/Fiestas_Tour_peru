@@ -232,11 +232,12 @@
                 </p>
 
 
-                <a class="bg-[#FBC489] font-black cursor-pointer p-[10px] relative top-[30px] rounded-[8px]"
-                    href="/contac.html"> Registrar un Nuevo Testimonio </a>
+                <button onclick="openModal()" id="btn-testimonios"
+                    class="bg-[#FBC489] font-black cursor-pointer p-[10px] relative top-[30px] rounded-[8px]"> Registrar
+                    un Nuevo Testimonio </button>
             </div>
 
-            
+
 
 
 
@@ -253,6 +254,46 @@
             </div>
 
         </section>
+
+
+        <div id="modal-testimonio"
+            class="hidden relative  flex justify-center items-center  top-0 bg-blue-500 w-full h-full">
+            <div style="background-color: rgba(0, 0, 0, 0.521);" class="fixed top-0 right-0 left-0   w-full h-full">
+
+
+                <div class="w-full h-full flex flex-col items-center justify-center">
+
+                    <div class=" flex flex-col justify-center items-center bg-gray-200  w-[500px] p-[25px] rounded-lg">
+                        <div class="flex w-full justify-end items-center">
+                            <button type="button" onclick="closeModal()">
+                                <svg class="text-red-600  hover:text-red-800 cursor-pointer"
+                                    xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
+                                    class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </button>
+                        </div>
+                        <form class="flex flex-col gap-[20px] w-full" action="/post">
+
+                            <label for="Nombre">Nombres</label>
+                            <input class="text-[12px] w-full rounded-[8px] p-[10px] outline-none h-[30px]" type="text">
+
+                            <label for="Fecha">Fechas</label>
+                            <input class="text-[12px] w-full rounded-[8px] p-[10px] outline-none h-[30px]" type="date">
+
+                            <label for="Comentario">Comentarios</label>
+                            <textarea class="text-[12px] w-full rounded-[8px] p-[10px] outline-none h-[140px]"
+                                name="comentario" id="comentario"></textarea>
+
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -299,6 +340,19 @@
 
 
     <script src="nav.js"></script>
+
+
+    <script>
+        function openModal() {
+            document.getElementById('modal-testimonio').style.display = 'block';
+        }
+        function closeModal(){
+            document.getElementById('modal-testimonio').style.display = 'none';
+        }
+    </script>
+
+
+
     <script>
         const API_URL = 'https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLjPfe-4zQvkRPbO3EOHYGfXOW79oexyOPkKI2zx5mGfailAKThuku0ZTWJWl_h8SOyIDHWV_rFjPEPoACBhJIFJmkC9TG-Uhu51SHU1kuonhFORRirra3OVRi2QKkyBonLKol-Vg53YqSF8J0fbjTvBGMjh_IT9LEmQvYGbA3bPoSDl8zOiaMYyrvLPAMamub-Bv4qOEhWMp4dVBcYOSBIxWO8nUbZ9z3ViDsLL64roFfVeXyBIomY6Uxo04jNdRDozlYiYk8z_pWwe-NgBNxaz2anSRlI0gS7vbUYX&lib=MQCsV6iu_6dgiqf2QLgGK0x6K3dPit44b';
 
